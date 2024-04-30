@@ -32,7 +32,7 @@ function App() {
         <h1>Hello world!</h1>
         <h1>Favourite movies:</h1>
         <ul>
-          {favouriteMovies.map((movie, index) => {
+          {favouriteMovies.length > 0 &&  favouriteMovies.map((movie, index) => {
             return <li key={movie + "-" + index} >
               {movie}
             </li>
